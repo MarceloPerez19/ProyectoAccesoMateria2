@@ -39,6 +39,9 @@
             this.txtNivel = new System.Windows.Forms.TextBox();
             this.txtCarrera = new System.Windows.Forms.TextBox();
             this.dtCreacion = new System.Windows.Forms.DateTimePicker();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -136,11 +139,43 @@
             this.dtCreacion.Size = new System.Drawing.Size(200, 20);
             this.dtCreacion.TabIndex = 10;
             // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Location = new System.Drawing.Point(565, 39);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(75, 23);
+            this.btnGuardar.TabIndex = 11;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Location = new System.Drawing.Point(565, 87);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.TabIndex = 12;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(565, 150);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(75, 23);
+            this.btnSalir.TabIndex = 13;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.button3_Click);
+            // 
             // frmAgregarMateria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnNuevo);
+            this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dtCreacion);
             this.Controls.Add(this.txtCarrera);
             this.Controls.Add(this.txtNivel);
@@ -154,6 +189,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmAgregarMateria";
             this.Text = "frmAgregarMateria";
+            this.Load += new System.EventHandler(this.btnGuardar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +208,8 @@
         private System.Windows.Forms.TextBox txtNivel;
         private System.Windows.Forms.TextBox txtCarrera;
         private System.Windows.Forms.DateTimePicker dtCreacion;
+        private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnSalir;
     }
 }

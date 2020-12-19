@@ -15,8 +15,7 @@ namespace CapaDatos
                 String cadenaConexcion = @"Server=USER-PC\SQLEXPRESS; database=Materia; integrated security=true";
                 SqlConnection conexion = new SqlConnection(cadenaConexcion);
                 //definir operacion sobre la bdd
-                string sql = "insert into DatosMateria(CodMateria, NombreMateria, Nivel, Carrera," +
-                    "FechaCreacion) values(@)CodMateria, @NombreMateria, @Nivel, @Carrera, @FechaCreacion)";
+                string sql = "insert into DatosMateria(CodMateria, NombreMateria, Nivel, Carrera, FechaCreacion) values(@CodMateria, @NombreMateria, @Nivel, @Carrera, @FechaCreacion)";
 
                 //definir un objeto de la clase command para ejecutar la sentencia sql que hemos creado
                 SqlCommand comando = new SqlCommand(sql, conexion);
