@@ -31,25 +31,25 @@ namespace UIWindowsTarea
         {
             if(this.txtCodMateria.Text.Length==0)
             {
-                MessageBox.Show("Por favor ingresa en dato requerido");
+                MessageBox.Show("Por favor ingresa el codigo de la materia");
                 this.txtCodMateria.Focus();
                 return;
             }
             if(this.txtNombre.Text.Length==0)
             {
-                MessageBox.Show("Por favor ingresa en dato requerido");
+                MessageBox.Show("Por favor ingresa el nombre");
                 this.txtNombre.Focus();
                 return;
             }
             if(this.txtNivel.Text.Length==0)
             {
-                MessageBox.Show("Por favor ingresa en dato requerido");
+                MessageBox.Show("Por favor ingresa el dato");
                 this.txtNivel.Focus();
                 return;
             }
             if(this.txtCarrera.Text.Length==0)
             {
-                MessageBox.Show("Por favor ingresa en dato requerido");
+                MessageBox.Show("Por favor ingres la carrera");
                 this.txtCarrera.Focus();
                 return;
             }
