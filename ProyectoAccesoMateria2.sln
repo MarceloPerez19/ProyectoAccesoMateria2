@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIWindowsTarea", "UIWindowsTarea\UIWindowsTarea.csproj", "{AA49DE41-6649-4D98-B23B-73762D504C30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiWeb2", "UiWeb2\UiWeb2.csproj", "{B7738BF2-BC78-47A0-83EB-9337032C5F98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{F486126F-F9DE-4D7D-9AF3-D9BFEFFB9271}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AA49DE41-6649-4D98-B23B-73762D504C30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA49DE41-6649-4D98-B23B-73762D504C30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA49DE41-6649-4D98-B23B-73762D504C30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA49DE41-6649-4D98-B23B-73762D504C30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7738BF2-BC78-47A0-83EB-9337032C5F98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7738BF2-BC78-47A0-83EB-9337032C5F98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7738BF2-BC78-47A0-83EB-9337032C5F98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7738BF2-BC78-47A0-83EB-9337032C5F98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F486126F-F9DE-4D7D-9AF3-D9BFEFFB9271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F486126F-F9DE-4D7D-9AF3-D9BFEFFB9271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F486126F-F9DE-4D7D-9AF3-D9BFEFFB9271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F486126F-F9DE-4D7D-9AF3-D9BFEFFB9271}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21013D42-9D2C-4B42-8EA2-08F53B0BF7AB}
+	EndGlobalSection
+EndGlobal
