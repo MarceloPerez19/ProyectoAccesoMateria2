@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CapaADatos2
+namespace CapaDatos
 {
         //getter y setter (getter devolver un valor) setter cambiar el valor del campo
         public class Materia

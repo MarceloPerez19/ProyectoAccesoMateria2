@@ -10,18 +10,15 @@ using System.Windows.Forms;
 
 namespace UIWindowsTarea
 {
-    public partial class frmListadoClases : Form
+    public partial class frmAgregarMateria : Form
     {
-        public frmListadoClases()
+        public frmAgregarMateria()
         {
             InitializeComponent();
         }
 
-        private void btnMostrar_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
-            this.dataGridViewMateria.DataSource = CapaDatos.MateriaDAO.getAll();
-
-
 
         }
     }

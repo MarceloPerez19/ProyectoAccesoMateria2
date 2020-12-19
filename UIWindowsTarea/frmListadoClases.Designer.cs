@@ -30,6 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnMostrar = new System.Windows.Forms.Button();
+            this.dataGridViewMateria = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMateria)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,16 +51,27 @@
             this.btnMostrar.TabIndex = 1;
             this.btnMostrar.Text = "Mostrar";
             this.btnMostrar.UseVisualStyleBackColor = true;
+            this.btnMostrar.Click += new System.EventHandler(this.btnMostrar_Click);
+            // 
+            // dataGridViewMateria
+            // 
+            this.dataGridViewMateria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewMateria.Location = new System.Drawing.Point(22, 71);
+            this.dataGridViewMateria.Name = "dataGridViewMateria";
+            this.dataGridViewMateria.Size = new System.Drawing.Size(671, 157);
+            this.dataGridViewMateria.TabIndex = 2;
             // 
             // frmListadoClases
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(767, 279);
+            this.Controls.Add(this.dataGridViewMateria);
             this.Controls.Add(this.btnMostrar);
             this.Controls.Add(this.label1);
             this.Name = "frmListadoClases";
             this.Text = "frmListadoClases";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMateria)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,5 +81,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMostrar;
+        private System.Windows.Forms.DataGridView dataGridViewMateria;
     }
 }
