@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="buscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buscar.Designer.cs">
+      <DependentUpon>buscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAgregarMateria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validar.cs" />
+    <EmbeddedResource Include="buscar.resx">
+      <DependentUpon>buscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmAgregarMateria.resx">
       <DependentUpon>frmAgregarMateria.cs</DependentUpon>
     </EmbeddedResource>
