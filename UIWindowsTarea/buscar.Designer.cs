@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtMateria = new System.Windows.Forms.TextBox();
             this.txtNivel = new System.Windows.Forms.TextBox();
             this.txtCarrera = new System.Windows.Forms.TextBox();
@@ -38,15 +38,22 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.bntBuscar = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cmbCod = new System.Windows.Forms.ComboBox();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(175, 83);
-            this.textBox1.MaxLength = 10;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtCodigo.Location = new System.Drawing.Point(175, 83);
+            this.txtCodigo.MaxLength = 10;
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(200, 20);
+            this.txtCodigo.TabIndex = 0;
             // 
             // txtMateria
             // 
@@ -124,11 +131,77 @@
             this.label5.TabIndex = 9;
             this.label5.Text = "Fecha creacion";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(29, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 13);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Seleccione la materia";
+            // 
+            // bntBuscar
+            // 
+            this.bntBuscar.Location = new System.Drawing.Point(668, 23);
+            this.bntBuscar.Name = "bntBuscar";
+            this.bntBuscar.Size = new System.Drawing.Size(75, 23);
+            this.bntBuscar.TabIndex = 12;
+            this.bntBuscar.Text = "Buscar";
+            this.bntBuscar.UseVisualStyleBackColor = true;
+            this.bntBuscar.Click += new System.EventHandler(this.bntBuscar_Click);
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(64, 17);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(75, 23);
+            this.btnActualizar.TabIndex = 13;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(64, 53);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(75, 23);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnActualizar);
+            this.groupBox1.Controls.Add(this.btnEliminar);
+            this.groupBox1.Location = new System.Drawing.Point(439, 89);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 15;
+            this.groupBox1.TabStop = false;
+            // 
+            // cmbCod
+            // 
+            this.cmbCod.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbCod.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbCod.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbCod.FormattingEnabled = true;
+            this.cmbCod.Location = new System.Drawing.Point(220, 25);
+            this.cmbCod.Name = "cmbCod";
+            this.cmbCod.Size = new System.Drawing.Size(372, 21);
+            this.cmbCod.TabIndex = 16;
+            // 
             // buscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cmbCod);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.bntBuscar);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -138,9 +211,10 @@
             this.Controls.Add(this.txtCarrera);
             this.Controls.Add(this.txtNivel);
             this.Controls.Add(this.txtMateria);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodigo);
             this.Name = "buscar";
-            this.Text = "buscar";
+            this.Load += new System.EventHandler(this.buscar_Load_1);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,7 +222,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtMateria;
         private System.Windows.Forms.TextBox txtNivel;
         private System.Windows.Forms.TextBox txtCarrera;
@@ -158,5 +232,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button bntBuscar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cmbCod;
     }
 }
