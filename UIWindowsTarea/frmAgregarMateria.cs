@@ -29,7 +29,7 @@ namespace UIWindowsTarea
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(this.txtCodMateria.Text.Length==0)
+            if(this.txtCodMateria.Text.Length==0) 
             {
                 MessageBox.Show("Por favor ingresa el codigo de la materia");
                 this.txtCodMateria.Focus();
