@@ -16,7 +16,7 @@ namespace UIWindowsTarea
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new buscar());
+            Application.Run(new frmListadoClases());
         }
     }
 }

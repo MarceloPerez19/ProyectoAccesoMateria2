@@ -31,8 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMostrar = new System.Windows.Forms.Button();
             this.dataGridViewMateria = new System.Windows.Forms.DataGridView();
-            this.linkActualizar = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.linkEliminar = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.linkActualizar = new System.Windows.Forms.DataGridViewLinkColumn();
+            this.linkEliminar = new System.Windows.Forms.DataGridViewLinkColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMateria)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,25 +57,44 @@
             // 
             // dataGridViewMateria
             // 
+            this.dataGridViewMateria.AllowUserToAddRows = false;
+            this.dataGridViewMateria.AllowUserToDeleteRows = false;
+            this.dataGridViewMateria.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewMateria.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewMateria.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.dataGridViewMateria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewMateria.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.linkActualizar,
             this.linkEliminar});
-            this.dataGridViewMateria.Location = new System.Drawing.Point(22, 71);
+            this.dataGridViewMateria.Location = new System.Drawing.Point(12, 73);
             this.dataGridViewMateria.Name = "dataGridViewMateria";
-            this.dataGridViewMateria.Size = new System.Drawing.Size(671, 157);
-            this.dataGridViewMateria.TabIndex = 2;
-            this.dataGridViewMateria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMateria_CellContentClick);
+            this.dataGridViewMateria.ReadOnly = true;
+            this.dataGridViewMateria.Size = new System.Drawing.Size(729, 150);
+            this.dataGridViewMateria.TabIndex = 4;
+            this.dataGridViewMateria.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewMateria_CellContentClick_1);
             // 
             // linkActualizar
             // 
+            this.linkActualizar.ActiveLinkColor = System.Drawing.SystemColors.Highlight;
             this.linkActualizar.HeaderText = "Accion";
+            this.linkActualizar.LinkColor = System.Drawing.Color.Black;
             this.linkActualizar.Name = "linkActualizar";
+            this.linkActualizar.ReadOnly = true;
+            this.linkActualizar.Text = "Actualizar";
+            this.linkActualizar.UseColumnTextForLinkValue = true;
+            this.linkActualizar.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             // 
             // linkEliminar
             // 
+            this.linkEliminar.ActiveLinkColor = System.Drawing.Color.Black;
             this.linkEliminar.HeaderText = "Accion";
+            this.linkEliminar.LinkColor = System.Drawing.Color.Red;
             this.linkEliminar.Name = "linkEliminar";
+            this.linkEliminar.ReadOnly = true;
+            this.linkEliminar.Text = "Eliminar";
+            this.linkEliminar.UseColumnTextForLinkValue = true;
             // 
             // frmListadoClases
             // 
@@ -98,7 +117,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMostrar;
         private System.Windows.Forms.DataGridView dataGridViewMateria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn linkActualizar;
-        private System.Windows.Forms.DataGridViewTextBoxColumn linkEliminar;
+        private System.Windows.Forms.DataGridViewLinkColumn linkActualizar;
+        private System.Windows.Forms.DataGridViewLinkColumn linkEliminar;
     }
 }

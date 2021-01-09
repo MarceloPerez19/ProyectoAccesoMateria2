@@ -9,7 +9,7 @@ namespace CapaDatos
     
         public class MateriaDAO
         {
-            private static String cadenaConexcion = @"Server=USER-PC\SQLEXPRESS; database=Materia; integrated security=true";
+            private static String cadenaConexcion = @"Server=DESKTOP-P2GIT4H; database=Materia; integrated security=true";
         public static int crear(Materia materia)
            {
                 
