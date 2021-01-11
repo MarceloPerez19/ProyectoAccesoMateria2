@@ -16,7 +16,7 @@ namespace UIWindowsTarea
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new informes.frmInformeMateria());
+            Application.Run(new frmListadoClases());
         }
     }
 }

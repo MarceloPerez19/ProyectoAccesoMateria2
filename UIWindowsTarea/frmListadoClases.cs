@@ -110,6 +110,7 @@ namespace UIWindowsTarea
                 frmActualizar frm1 = new frmActualizar(CodMateria);
                 frm1.ShowDialog();
             }
+            this.cargarGrid();
         }
     }
 }
